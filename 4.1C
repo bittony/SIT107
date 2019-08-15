@@ -39,7 +39,7 @@ void loop()
     Serial.println(val);
     delay(5000);
 
-    if (val <= 366)
+    if (val <= 341)
     {
         state = lowLevel;
         digitalWrite(LED_BUILTIN, HIGH);
@@ -47,7 +47,7 @@ void loop()
         digitalWrite(LED_BUILTIN, LOW);
         delay(500);
     }
-    else if (val > 366)
+    else if (val > 341)
     {
         state = okayLevel;
         digitalWrite(LED_BUILTIN, LOW);
